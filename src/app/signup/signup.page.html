@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-button *ngIf="!loading" (click)="signup()">Sign Up</ion-button>
+  </div>    
+</ion-content>

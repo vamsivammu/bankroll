@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullScreen]="true" >
+  
+  <div class="container">
+    <div id="gameContainer"></div>
+    <ion-button *ngIf="is_current_turn" (click)="roll()" class="roll">ROLL</ion-button>
+  </div>
+  
+</ion-content>
